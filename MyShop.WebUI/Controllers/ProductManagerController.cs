@@ -78,7 +78,7 @@ namespace MyShop.WebUI.Controllers
             }
             else
             {
-                if (ModelState.IsValid)
+                if (!ModelState.IsValid)
                 {
                     return View(product);
                 }
